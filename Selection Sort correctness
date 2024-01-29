@@ -1,0 +1,12 @@
+Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element from the unsorted part of the array and putting it at the beginning. The algorithm maintains two subarrays in the given array: the sorted subarray and the unsorted subarray. In each iteration, it finds the minimum element from the unsorted subarray and swaps it with the first element of the unsorted subarray.
+
+The correctness of the selection sort algorithm can be argued based on its invariant property. The invariant property of selection sort is that after each iteration, the smallest element from the unsorted subarray is moved to the correct position in the sorted subarray.
+
+Here's a step-by-step argument for the correctness of selection sort:
+
+Initialization: At the beginning of the algorithm, the entire array is considered as unsorted. The sorted subarray is empty.
+Maintenance: In each iteration of the outer loop, the algorithm finds the minimum element in the unsorted subarray and swaps it with the first element of the unsorted subarray. This ensures that after each iteration, the smallest element is at its correct position in the sorted subarray.
+Termination: The algorithm continues until the entire array is sorted. After each iteration, the size of the unsorted subarray decreases by 1. When the unsorted subarray becomes empty, the array is fully sorted.
+The correctness of the algorithm relies on the fact that, after each iteration, the smallest element is correctly placed in the sorted subarray. The nested loops guarantee that every element is compared with every other element, ensuring that the algorithm considers all possible pairs and correctly places the smallest element in each iteration.
+
+In conclusion, selection sort is correct because it maintains the invariant property, ensuring that the smallest element is moved to its correct position in the sorted subarray after each iteration.
